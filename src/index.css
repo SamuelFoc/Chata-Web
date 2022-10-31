@@ -1,13 +1,82 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  --primary-color: #12262d;
+  --secondary-color: #535d66;
+  --accent-color: #e95b2b;
+  --text-color: #e9e9e9;
+  --font-family-fancy: "Kingston Roman";
+  --font-family-basic: "Montserrat", sans-serif;
+}
+
+.mainPageDock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  background-color: var(--primary-color);
+}
+.mainPageSection {
+  min-height: 100vh;
+  width: 100%;
+  color: var(--text-color);
+  position: relative;
+}
+.mainPageSectionActivities {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  position: relative;
+}
+.mainPageSectionIntro {
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 150px;
+  color: var(--text-color);
+  position: relative;
+}
+.pageFooter {
+  min-height: 60vh;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.94) 0%,
+    rgba(0, 0, 0, 0.1504) 100%
+  );
+  backdrop-filter: blur(10px);
+}
+.btnCustom {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  font-size: 40px;
+  font-family: var(--font-family-basic);
+  transition: 0.3s;
+}
+.btnCustom:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.myFontFamily {
+  font-family: var(--font-family-basic);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 5px 0 0 5px;
 }

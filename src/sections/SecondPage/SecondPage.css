@@ -1,0 +1,84 @@
+.mainSecondPageContainer {
+  height: 100%;
+}
+
+.secondPageContent {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secondPageTitle {
+  margin-left: 150px;
+  min-width: fit-content;
+}
+.secondPageTitle > h1 {
+  font-family: var(--font-family-basic);
+  font-size: 58px;
+}
+
+.secondPageImages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 250px;
+}
+.imageBox > img {
+  margin: 0 20px;
+}
+.secondPageImages :nth-child(2n + 1) {
+  margin-top: 100px;
+}
+.secondPageImages :nth-child(2n) {
+  margin-bottom: 100px;
+}
+.secondPageWood {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  z-index: -2;
+}
+.secondPageButton {
+  margin: 150px 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .secondPageContent {
+    display: block;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .secondPageTitle {
+    margin-left: 15px;
+  }
+  .secondPageTitle > h1 {
+    font-size: 40px;
+  }
+
+  .secondPageImages {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .imageBox > img {
+    margin: 0 0px;
+    width: 100vw;
+  }
+  .secondPageImages :nth-child(2n + 1) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .secondPageImages :nth-child(2n) {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .secondPageButton {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,52 @@
+.mainActivitiesContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainActivitiesContainer > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.activitiesContent {
+  width: 100vw;
+  padding: 0 40px;
+}
+
+.activitiesContent > h3 {
+  font-family: var(--font-family-basic);
+  font-size: 58px;
+  margin-bottom: 50px;
+}
+
+.activitiesCards {
+  width: 100vw;
+  display: flex;
+  overflow-x: scroll;
+}
+
+@media only screen and (max-width: 400px) {
+  .activitiesContent {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .activitiesContent > h3 {
+    margin-bottom: 0px;
+    padding: 0px 15px;
+    font-size: 40px;
+  }
+
+  .activitiesCards {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  .mainActivitiesContainer > img {
+    z-index: -3;
+  }
+}

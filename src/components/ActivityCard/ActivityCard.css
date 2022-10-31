@@ -1,0 +1,103 @@
+.activityCard {
+  position: relative;
+  margin: 0 15px;
+  width: 325px;
+  height: 492px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.472);
+}
+.activityCardCover {
+  width: 325px;
+  height: 492px;
+  opacity: 0;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.408);
+  backdrop-filter: blur(8px);
+  transition: 0.2s;
+}
+.activityCard > img {
+  position: absolute;
+}
+
+.activityCardTitle {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  min-width: 300px;
+  left: 15px;
+  top: 15px;
+  font-family: var(--font-family-basic);
+  font-size: 32px;
+}
+.activityCardTitle:hover {
+  color: white;
+  cursor: pointer;
+}
+.activityCardText {
+  position: absolute;
+  min-width: 300px;
+  left: 15px;
+  bottom: 0;
+  font-family: var(--font-family-basic);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.activityCardCover:hover {
+  opacity: 1;
+}
+
+.activityCardCover:hover ~ .activityCardTitle {
+  visibility: visible;
+  z-index: 4;
+}
+
+.activityCardCover:hover ~ .activityCardText {
+  visibility: visible;
+  z-index: 4;
+}
+
+@media only screen and (max-width: 400px) {
+  .activityCard {
+    margin: 20px 0;
+    width: 270px;
+    height: 409px;
+  }
+  .activityCardCover {
+    max-width: 270px;
+    height: 409px;
+  }
+  .activityCard > img {
+    position: absolute;
+    width: 270px;
+  }
+
+  .activityCardTitle {
+    min-width: 200px;
+    font-size: 32px;
+  }
+  .activityCardText {
+    position: absolute;
+    min-width: 200px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .activityCardCover:hover {
+    opacity: 1;
+  }
+
+  .activityCardCover:hover ~ .activityCardTitle {
+    visibility: visible;
+    z-index: 4;
+  }
+
+  .activityCardCover:hover ~ .activityCardText {
+    visibility: visible;
+    z-index: 4;
+  }
+}

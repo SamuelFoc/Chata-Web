@@ -1,0 +1,81 @@
+.mainFirstPageContainer {
+  height: 100%;
+  background-image: url("/public/bcg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* NAVBAR */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(8px);
+}
+.navBarTitle {
+  font-size: 48px;
+  margin: 20px;
+  font-family: var(--font-family-fancy);
+}
+.navBarList {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.navBarList > li {
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0 20px;
+  transition: 0.2s;
+  padding: 0 10px;
+  border-left: 4px solid transparent;
+}
+.navBarList > li:hover {
+  border-left: 4px solid var(--accent-color);
+  cursor: pointer;
+}
+
+/* MOTTO */
+.motto {
+  font-family: var(--font-family-basic);
+  position: absolute;
+  top: 32%;
+  left: 30px;
+}
+.motto > h1 {
+  font-size: 93px;
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+  padding: 150px 0;
+  background-color: var(--text-color);
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+}
+.banner > ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.banner > ul :nth-child(2n) {
+  padding-bottom: 20px;
+}
+.banner > ul :nth-child(2n + 1) {
+  padding-top: 20px;
+}
+.banner > ul > li > strong {
+  font-size: 50px;
+  color: var(--accent-color);
+}
+.banner > ul > li > p {
+  font-size: 28px;
+  font-family: var(--font-family-basic);
+  color: var(--primary-color);
+}

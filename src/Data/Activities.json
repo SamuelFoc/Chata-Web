@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Farm of St.Francis",
+    "description": "We offer an unforgettable getaway from the day-to-day, come bond with nature, ride horses, live on a well-appointed farm. We offer riding in our indoor hall, an outside ring and the surrounding nature treks. Our main focus is training riders for treks with varying levels of difficulty and lengths.",
+    "img": "/card1.png",
+    "url": "https://www.farm.sk/en/riding-home/"
+  },
+  {
+    "title": "Card item 2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adip eum. Lorem ipsum dolor sit amet et eum. Lore methods.",
+    "img": "/card2.png"
+  },
+  {
+    "title": "Card item 3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adip eum. Lorem ipsum dolor sit amet et eum. Lore methods.",
+    "img": "/card3.png"
+  },
+  {
+    "title": "Card item 4",
+    "description": "Lorem ipsum dolor sit amet, consectetur adip eum. Lorem ipsum dolor sit amet et eum. Lore methods.",
+    "img": "/card4.png"
+  },
+  {
+    "title": "Card item 5",
+    "description": "Lorem ipsum dolor sit amet, consectetur adip eum. Lorem ipsum dolor sit amet et eum. Lore methods.",
+    "img": "/card5.png"
+  }
+]

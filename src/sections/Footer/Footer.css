@@ -1,0 +1,52 @@
+.mainFooterContainer > h1 {
+  margin-top: 70px;
+  color: white;
+  font-size: 40px;
+  font-family: var(--font-family-basic);
+}
+
+.mainFooterContainer > img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 50vw;
+  max-width: 500px;
+}
+
+.footerInfo {
+  color: white;
+  font-family: var(--font-family-basic);
+  font-size: 20px;
+  text-align: start;
+  margin: 40px 0;
+  padding-left: 10%;
+}
+
+.footerSource {
+  position: absolute;
+  bottom: 0;
+  left: calc(50vw - 143px);
+  color: white;
+  font-family: var(--font-family-basic);
+}
+.footerSource > a {
+  text-decoration: none;
+  color: white;
+}
+
+.socialIcon {
+  width: 40px;
+}
+
+@media only screen and (max-width: 400px) {
+  .mainFooterContainer > h1 {
+    font-size: 22px;
+  }
+  .socialIcon {
+    width: 20px;
+  }
+  .socialText {
+    font-size: 16px;
+  }
+}
