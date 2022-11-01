@@ -2,6 +2,8 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 
 import "./SecondPage.css";
+import "./Phone.css";
+import "./Medium.css";
 
 const SecondPage = () => {
   return (

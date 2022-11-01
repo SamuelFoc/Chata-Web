@@ -1,0 +1,22 @@
+@media only screen and (max-width: 400px) {
+  .activitiesContent {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .activitiesContent > h3 {
+    margin-bottom: 0px;
+    padding: 0px 15px;
+    font-size: 40px;
+    font-family: var(--font-family-basic);
+  }
+
+  .activitiesCards {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  .mainActivitiesContainer > img {
+    transform: rotateY(180deg);
+  }
+}

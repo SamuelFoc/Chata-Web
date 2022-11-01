@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 400px) and (max-width: 1600px) {
   .mainActivitiesContainer {
     width: 100%;
     height: 100%;
@@ -10,7 +10,8 @@
   .mainActivitiesContainer > img {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
+    transform: rotateY(180deg);
   }
 
   .activitiesContent {
@@ -19,7 +20,7 @@
 
   .activitiesContent > h3 {
     font-family: var(--font-family-basic);
-    font-size: 58px;
+    font-size: 42px;
     margin: 30px 20px;
   }
 

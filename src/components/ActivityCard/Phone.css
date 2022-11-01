@@ -1,14 +1,8 @@
-@media only screen and (min-width: 1600px) {
-  * {
-    --image-width: 250px;
-  }
-
+@media only screen and (max-width: 400px) {
   .activityCard {
     position: relative;
-    height: 550px;
-    width: 350px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 400px;
+    width: 250px;
     margin: 20px 15px;
 
     border-radius: 20px;
@@ -17,8 +11,8 @@
 
   .activityCardCover {
     position: absolute;
-    height: 551px;
-    width: 351px;
+    height: 401px;
+    width: 251px;
     border-radius: 20px;
 
     opacity: 0;
@@ -36,7 +30,7 @@
     color: white;
 
     font-family: var(--font-family-basic);
-    font-size: 32px;
+    font-size: 24px;
   }
   .activityCardTitle:hover {
     color: white;
@@ -50,7 +44,7 @@
 
     font-family: var(--font-family-basic);
     color: white;
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .activityCardCover:hover {

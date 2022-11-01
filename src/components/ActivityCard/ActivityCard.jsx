@@ -1,9 +1,11 @@
 import React from "react";
 import "./ActivityCard.css";
+import "./Phone.css";
+import "./Medium.css";
 
 const ActivityCard = (props) => {
   return (
-    <div className="activityCard">
+    <div className={`activityCard ${props.id}`}>
       <div className="activityCardCover">
         <a href={props.url} className="activityCardTitle">
           {props.title}
@@ -12,7 +14,11 @@ const ActivityCard = (props) => {
           <p>{props.description}</p>
         </div>
       </div>
-      <img src={props.img} alt="" />
+      <style>
+        {`.${props.id} {
+            background-image: url("${props.img}")
+          }`}
+      </style>
     </div>
   );
 };

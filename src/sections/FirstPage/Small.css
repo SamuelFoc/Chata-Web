@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 400px) and (max-width: 950px) {
   .mainFirstPageContainer {
     height: 100%;
     background-image: url("/public/bcg.jpg");
@@ -14,13 +14,14 @@
     backdrop-filter: blur(8px);
   }
   .navBarTitle {
-    font-size: 48px;
+    font-size: 32px;
     margin: 20px;
     font-family: var(--font-family-fancy);
   }
   .navBarListBig {
     display: flex;
     list-style: none;
+    font-size: 22px;
     font-weight: 100;
     margin: 0 20px;
     transition: 0.2s;
@@ -28,31 +29,29 @@
     border-left: 4px solid transparent;
   }
   .navBarListBig > li {
-    font-size: 32px;
+    display: none;
+    font-size: 2px;
     font-weight: 100;
     margin: 0 20px;
     transition: 0.2s;
     padding: 0 10px;
     border-left: 4px solid transparent;
   }
-  .navBarListBig > li:hover {
-    border-left: 4px solid var(--accent-color);
-    cursor: pointer;
-  }
 
   .hamburgerIcon {
     margin: 0 30px;
-    display: none;
   }
-
   .navBarList {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    position: absolute;
+    top: 78px;
+    right: 0;
+
+    padding: 10px 0;
+    background-color: var(--primary-color);
     list-style-type: none;
   }
   .navBarList > li {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 100;
     margin: 0 20px;
     transition: 0.2s;
@@ -68,21 +67,21 @@
   .motto {
     font-family: var(--font-family-basic);
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 30px;
   }
   .motto > h1 {
-    font-size: 98px;
+    font-size: 58px;
   }
 
   /* BANNER  */
   .banner {
     width: 100%;
-    padding: 130px 0;
+    padding: 40px 0;
     background-color: var(--text-color);
     position: absolute;
     left: 0;
-    bottom: -90px;
+    bottom: -60px;
   }
   .banner > ul {
     display: flex;
@@ -100,11 +99,11 @@
     padding-top: 20px;
   }
   .banner > ul > li > strong {
-    font-size: 52px;
+    font-size: 32px;
     color: var(--accent-color);
   }
   .banner > ul > li > p {
-    font-size: 32px;
+    font-size: 22px;
     font-family: var(--font-family-basic);
     color: var(--primary-color);
   }

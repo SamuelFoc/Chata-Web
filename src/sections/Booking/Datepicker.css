@@ -1,0 +1,20 @@
+.finalDatepicker {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.424);
+}
+.rdrCalendarWrapper {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.741);
+  color: white;
+}
+.rdrDateDisplayWrapper {
+  background-color: rgba(0, 0, 0, 0.136);
+}
+
+.rdrDateDisplayWrapper {
+  border-radius: 10px 10px 0 0;
+}
+
+.rdrMonths .rdrMonthsVertical {
+  color: white;
+}
