@@ -4,11 +4,10 @@
 }
 .rdrCalendarWrapper {
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.741);
-  color: white;
+  background-color: rgb(255, 255, 255);
 }
 .rdrDateDisplayWrapper {
-  background-color: rgba(0, 0, 0, 0.136);
+  background-color: rgba(188, 188, 188, 0.136);
 }
 
 .rdrDateDisplayWrapper {
